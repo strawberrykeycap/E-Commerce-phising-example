@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta >
+    <link rel="stylesheet"
+     href="index.css"> 
+    <!-- Required Core Stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+<!-- Optional Theme Stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+</head>
+   <body>
+    <header id="header" >Storied Threads</header>
+    <nav>
+      <ul  id="navbar">
+        <li><a href="#socks" class="nav-link"><i class="fa-regular fa-circle-xmark fa-2x" > Socks</i></a>
+        </li>
+            <li><a href="Shoes" class="nav-link"><i class="fa-regular fa-circle-xmark fa-2x"> Shoes</i></a>
+            </li>   
+                 <li>
+                    <a href="Pants" class="nav-link">
+                       <i class="fa-regular fa-circle-xmark fa-2x"> Pants</i>
+                    </a>
+                 </li>  
+                    <li>
+                        <a href="Hats" class="nav-link">
+                           <i class="fa-regular fa-circle-xmark fa-2x"> Hats</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Shopping" class="nav-link">
+                          <i  id="shopping-cart" class="fa-solid fa-cart-shopping fa-2x"> ( 0 )</i>
+                          <div class="shopping-cart">
+                            
+                            <p> Coupon: </p>
+                            <input placeholder="Enter Code"></input> 
+                            <button type="submit"> Submit </button>
+                          
+                            <p>Price: $0.00 </p> 
+
+                            <p> Items In Cart</p>
+                             <img></img>  
+                             <img></img>
+                             <img></img>
+                             <button> Checkout </button> 
+
+                             
+                        </div>
+                        </a>
+                      </li>
+                        
+    </nav>
+   
+    <section id="greetings">
+    <div>
+        <h1 id="maingreeting"> If These Threads Could Talk </h1> 
+        <h2 id="sub-greeting"> Reclaimed Clothing & Organic Bamboo Socks</h2> 
+    </div> 
+   </section> 
+   
+   <section id="divider">
+    
+   </section>
+
+   <!-- This should be  a series of c \= -->
+   <section id="Sale">
+    <div>
+       
+    <div> 
+   </section>
+
+   <section id="Shoes">
+  
+       <h2 id="sale">SALE 10% SITEWIDE</h2>
+       <h4 id='sale2'> Save 20% with verified email </h4>   
+      
+       <div id="login"> 
+            <div id="login-wrapper-shadow">
+            <input class="loginInput" placeholder="Email"></input>
+            <input class="loginInput" placeholder="Password"></input>
+           <div id="button-wrapper"> 
+                 <button class="loginButton">Jump In</button> 
+                 <button class="loginButton"> Step out</button>
+                 <button class="loginButton"> Sign UP </button> 
+             </div>  
+        <p id="sentence"> Or Login Securely With <p>
+            
+      
+            <div id="login-wrapper"> 
+                <i class="fa-brands fa-google fa-2x" id="google" ></i>
+                <i class="fa-brands fa-facebook fa-2x" id="facebook"></i>
+                <i class="fa-brands fa-instagram fa-2x" id="instagram"></i>
+                <i class="fa-brands fa-paypal fa-2x" id="paypal"></i>
+            </div> 
+        </div> 
+    </div>
+        <div id="verticalShoes">
+            <div id="shoe-display">
+                <div id="shoe-gallery">
+                    <button id="previous-shoe">Prev</button>
+                    <img id="current-shoe"></img>
+                    <button id="next-shoe">Next</button> 
+                </div>
+        </div> 
+         
+        <!--- Insert a vertical carosuol here with a transparent
+        background just steal images o shioes and have them converted to svg 
+       ALL SHOES MUST BE SOLD OUT!!!!!!!!-->
+       </div>
+   </section>
+
+   
+   <section class="Hats">
+        
+
+    <div class="card-container">
+        <div class="card"> 
+                <img class="image-card" src="https://i.pinimg.com/736x/87/85/a6/8785a681c01c6c77981372a0396ea281.jpg">
+            <div class="card-details"> 
+                 <span class="price"> $39.99 </span> 
+                    <div class="detail-button-wrapper">
+                        <span class="button">Add To Cart</span>
+                        <div>
+                        <button id="card-input-minus"> - </button>
+                        <input id="card-input-CART" class="card-input-cart"></input>
+                         <button id="card-input-plus"> + </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+            
+       
+</section> 
+      
+
+    
+
+
+    
+     <section id="socks">
+        <div data-glide-el="controls">
+        <button data-glide-dir="<<">Start</button>
+        <button data-glide-dir=">>">End</button>
+      </div>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">...</div>
+      
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        </div>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">...</div>
+          
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
+              <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+          </div>
+          
+      </div>
+      
+   </section>
+
+
+   <section id="pants">
+    
+   </section>
+
+
+   <section id="hats">
+
+   </section>
+
+
+   
+   <footer id="footer">
+
+   </footer>
+
+   </body>
+
+
+
+   <script src="./glide-3.6.0"></script>
+<script>
+  new Glide('.glide').mount()
+</script>
+
+   <script src="index.js">
+   </script>
+   </html>   

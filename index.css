@@ -1,0 +1,343 @@
+
+/* * {
+    background-color: rgb(0 100  0 / 0.1) !important;
+} */
+
+html{
+    overflow-x: 0;
+    overflow-y: 0; 
+}
+img{
+    display:block;
+}
+ :root {
+    --orangey: #FB8500;
+    --lightOrange: #FFB703;
+    --blackEye: #023047;
+    --crayonOcean: #219EBC;
+    --babyBlue: #8ECAE6;
+
+}
+
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    color:var(--crayonOcean);
+}
+
+#navbar
+{
+    /* font-size: 1.25em; */
+}
+
+nav{
+
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+    top: 0;
+    left: 0;
+
+    background-color: var(--blackEye);
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    padding-left: 1.5rem;
+    /* padding-right: 1.5rem; */
+    margin-right: 10vw;
+
+    font-size:  1rem;
+    margin-top: 2.5vh;
+    justify-content: space-evenly;
+
+
+
+}
+
+li{
+    gap: 1rem;
+}
+
+
+.nav-link{
+  transition: ease-in-out;
+  transition-property: color;
+  duration: 1s ;
+
+
+}
+
+.nav-link:hover{
+    color: var(--crayonOcean);
+}
+nav ul  {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link{
+    margin-top: 3vh;
+    text-decoration: none;
+    color: var(--orangey);
+    position:absolute;
+
+}
+
+ .shopping:hover > .shopping-cart {
+    display: block;
+    font-size: 1.5em; 
+    background-color: var(--blackEye);
+    border: 3px solid white;   
+    border-radius:  0 0 1rem 1rem; 
+    
+    
+}
+.shopping-cart{
+    width:70vw;
+    height: 65vh;
+    margin-top: 2rem;
+    margin-right: 10vw;
+ 
+    padding: 1rem;
+    color: var(--orangey); 
+   
+}
+
+body{
+    width: 100vw;
+}
+#greetings{
+    height: 100vh;
+    width: 70vw;
+    /* border: 2rem solid; */
+    background-image:url("https://c.pxhere.com/photos/8d/03/beautiful_beauty_fashion_female_girl_person_steel_streetwear-1514833.jpg!d");
+    /* border-image:linear-gradient( 45deg, grey, blue) 50; */
+    background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         display: flex;
+         height: 100vh;
+          width: 100vw;
+          margin-bottom: -5vh;
+}
+#maingreeting, #sale , #sale2{
+   
+    font-family: monospace;
+}
+#maingreeting{
+    /* outline: 1px solid red; */
+       margin-top: 47vh;
+       margin-left: 5vw;
+       margin-bottom: 0vh;
+       justify-content: center;
+       align-content: center;
+       color: var(--lightOrange);
+         font-size: 2.5rem;
+         font-size: 8em;
+         font-weight: bold;
+         font-family: Helvetica;
+         text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+#sub-greeting{
+     margin-bottom: 0px;
+     margin-left: 5vw;
+    color: var(--lightOrange);
+
+
+
+font-size: 2em;
+font-weight: bold;
+font-family: Helvetica;
+
+}
+
+#divider{
+    width: 100vw; 
+    height: 3vh; 
+    background-color: red;
+   
+}
+
+
+#sale{
+  justify-content: center;
+  color: var(--orangey);
+  font-size: 2rem;
+  margin-left: 5vw;
+  margin-top: 5vh; 
+}
+
+#sale2{
+    justify-content: center;
+    color: var(--orangey);
+    font-size: 1.5rem;
+    margin-left: 5vw;
+
+}
+#login-wrapper-shadow{
+    margin-left: 7vw;
+
+    height: 3vh;
+    height: 25vw;
+    width: 30vw;
+    margin-left: 5vw;
+    background-color: rgba(200,33,1,0.3) ;
+}
+
+#login{
+    border:3px dashed var(--babyBlue);
+    height: 25vw;
+    width: 30vw;
+    margin-left: 5vw;
+    background-color: rgba(255,33,1,0.3) ;
+
+}
+#sentence #button-wrapper {
+    margin-right: 7vw;/*counters the 2nd box margin*/
+}
+#sentence{
+    color:#FFF;
+    font-size: 1.5em;
+}
+#button-wrapper{
+    display:flex;
+    flex-wrap:no-wrap;
+    gap: 3vw;
+    justify-content: center;
+    align-content: center;
+    margin-right: 7vw;/*counters the 2nd box margin*/
+}
+
+.loginInput{
+    display: flex;
+    flex-wrap: wrap;
+    height: 4vw;
+    width: 20vw;
+    margin-bottom: 0.5rem;
+    /*! margin-left: 2rem; */
+    margin-top: 2rem;
+}
+.loginButton {
+    display: flex;
+    width: 5vw;
+
+
+
+
+
+}
+#Shoes{
+ height: 100vh;
+
+ border-image: repeating-linear-gradient(45deg, green, #3bf, green 30px) 60;
+  background-image: url("https://c0.wallpaperflare.com/preview/943/148/889/nike-air-jordan-1-shoes-near-chain-link-fence.jpg");
+ background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+#Cert{
+    color: var(--lightOrange);
+}
+
+#login-wrapper{
+    display: flex;
+    gap: 10px;
+}
+
+#google{
+    color: white;
+}
+
+#facebook{
+    color: dodgerblue;
+}
+
+#instagram{
+    color: white:
+}
+
+#paypal{
+    color: blue;
+}
+
+.Hats{
+    height: 100vh;
+    background-color: rgba(33,52,111, 0.4);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.card-container{
+    outline: 3px solid orange;
+    margin-top: 10vh; /*remove when adding more cards*/
+    width: 300px;
+    height: 400px;
+
+
+
+}
+.image-card{
+
+    width: 80%;
+    padding: 1.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 12px;
+}
+
+
+.card-details{
+display: flex;
+flex-direction: column;
+}
+
+.price{
+    margin: 0 auto;
+}
+
+.detail-button-wrapper{
+margin: 0 auto;
+}
+
+.card-input-cart{
+    width:  5vw;
+}
+#socks{
+    height:100vh;
+    background-color:orange;
+}
+
+#hats{
+    height:100vh;
+    background-color:red;
+}
+
+#pants{
+    height:100vh;
+    background-color:dodgerblue;
+}
+
+#footer{
+    height:20vh;
+    background-color:purple;
+}
