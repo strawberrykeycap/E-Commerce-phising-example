@@ -3,6 +3,11 @@
     background-color: rgb(0 100  0 / 0.1) !important;
 } */
 
+#background{
+   background-color: dodgerblue; 
+   width: 100vw;
+   height: 100vh;
+}
 html{
     overflow-x: 0;
     overflow-y: 0; 
@@ -88,13 +93,13 @@ nav ul  {
 
 }
 
- .shopping:hover > .shopping-cart {
+ #Shopping:hover > .shopping-cart {
     display: block;
     font-size: 1.5em; 
     background-color: var(--blackEye);
-    border: 3px solid white;   
+    /* border: 1px asolid white;    */
     border-radius:  0 0 1rem 1rem; 
-    
+    visibility: visible;
     
 }
 .shopping-cart{
@@ -102,9 +107,10 @@ nav ul  {
     height: 65vh;
     margin-top: 2rem;
     margin-right: 10vw;
- 
+    visibility: hidden;
     padding: 1rem;
     color: var(--orangey); 
+    transition:  ease-in-out .125s; 
    
 }
 
@@ -113,7 +119,7 @@ body{
 }
 #greetings{
     height: 100vh;
-    width: 70vw;
+    width: 100vw;
     /* border: 2rem solid; */
     background-image:url("https://c.pxhere.com/photos/8d/03/beautiful_beauty_fashion_female_girl_person_steel_streetwear-1514833.jpg!d");
     /* border-image:linear-gradient( 45deg, grey, blue) 50; */
@@ -121,8 +127,7 @@ body{
          background-position: center;
          background-repeat: no-repeat;
          display: flex;
-         height: 100vh;
-          width: 100vw;
+        
           margin-bottom: -5vh;
 }
 #maingreeting, #sale , #sale2{
@@ -182,6 +187,9 @@ font-family: Helvetica;
   font-size: 2rem;
   margin-left: 5vw;
   margin-top: 5vh; 
+  padding-top: 10vh;
+
+  
 }
 
 #sale2{
@@ -244,8 +252,12 @@ font-family: Helvetica;
 
 }
 #Shoes{
- height: 100vh;
+    display: block;
+    margin: 0 auto; 
+    margin-top: 5vh;
 
+ height: 100vh;
+ width: 100vw; 
  border-image: repeating-linear-gradient(45deg, green, #3bf, green 30px) 60;
   background-image: url("https://c0.wallpaperflare.com/preview/943/148/889/nike-air-jordan-1-shoes-near-chain-link-fence.jpg");
  background-size: cover;
@@ -271,7 +283,7 @@ background-repeat: no-repeat;
 }
 
 #instagram{
-    color: white:
+    color: white;
 }
 
 #paypal{
@@ -291,18 +303,26 @@ background-repeat: no-repeat;
 .card-container{
     outline: 3px solid orange;
     margin-top: 10vh; /*remove when adding more cards*/
-    width: 300px;
-    height: 400px;
+    width: 60vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
 
 
 }
+
+.card{
+
+}
+
 .image-card{
 
     width: 80%;
     padding: 1.5rem;
     aspect-ratio: 1/1;
     border-radius: 12px;
+
 }
 
 
@@ -337,6 +357,54 @@ margin: 0 auto;
     background-color:dodgerblue;
 }
 
+#all-in-one{ 
+    width: 100vw; 
+    height: 100vh; 
+    background-color:rgba(219, 156, 188, 0.8);
+
+}
+
+#description{
+    display: flex; 
+    margin-left: 35vw; 
+    margin-bottom: 5vw; 
+    margin-top: 5vh;    
+}
+#slide-left{
+    width: 10vw; 
+    height: 10vh; 
+    margin-top: 25vh; 
+
+}
+#slider{
+    display: flex; 
+    gap: 10px;
+    margin-left: 15vw;
+    margin-top: 5vh;  
+}
+#slide-right{
+    width: 10vw; 
+    height:10vh;
+    margin-top: 25vh;
+}
+#slider-image-center{
+    width: 30vw; 
+    height: 60vh; 
+}
+
+#button-group{
+    display: flex;
+     gap: 5vw; 
+     margin-left: 20vw;
+}
+
+.button-group{
+    height: 5vh; 
+    width: 10vh; 
+    margin-left: 5vw; 
+    border: none;
+    
+}
 #footer{
     height:20vh;
     background-color:purple;

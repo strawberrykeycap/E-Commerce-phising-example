@@ -35,7 +35,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="Shopping" class="nav-link">
+                        <a id="Shopping" class="nav-link">
                           <i  id="shopping-cart" class="fa-solid fa-cart-shopping fa-2x"> ( 0 )</i>
                           <div class="shopping-cart">
                             
@@ -65,16 +65,18 @@
     </div> 
    </section> 
    
-   <section id="divider">
+   <!-- <section id="divider">
     
-   </section>
+   </section> -->
 
    <!-- This should be  a series of c \= -->
    <section id="Sale">
+    
     <div>
        
     <div> 
    </section>
+
 
    <section id="Shoes">
   
@@ -83,21 +85,21 @@
       
        <div id="login"> 
             <div id="login-wrapper-shadow">
-            <input class="loginInput" placeholder="Email"></input>
-            <input class="loginInput" placeholder="Password"></input>
+            <input class="loginInput"  id="username" placeholder="Email"></input>
+            <input class="loginInput" id="userpass"  placeholder="Password" type="password"></input>
            <div id="button-wrapper"> 
-                 <button class="loginButton">Jump In</button> 
-                 <button class="loginButton"> Step out</button>
+                 <button class="loginButton">Log In</button> 
+                 <button class="loginButton"> Log out</button>
                  <button class="loginButton"> Sign UP </button> 
              </div>  
-        <p id="sentence"> Or Login Securely With <p>
-            
-      
+        <p id="sentence">Login Securely With <p>
+             
+<a href="https://accounts.google.com/">
             <div id="login-wrapper"> 
-                <i class="fa-brands fa-google fa-2x" id="google" ></i>
-                <i class="fa-brands fa-facebook fa-2x" id="facebook"></i>
-                <i class="fa-brands fa-instagram fa-2x" id="instagram"></i>
-                <i class="fa-brands fa-paypal fa-2x" id="paypal"></i>
+                <a href="" id="google" onclick=popUp()><i class="fa-brands fa-google fa-2x" id="google" ></i></a>
+                <a href=""><i class="fa-brands fa-facebook fa-2x" id="facebook"></i>
+                <a href=""><i class="fa-brands fa-instagram fa-2x" id="instagram"></i></a>
+                <a href=""><i class="fa-brands fa-paypal fa-2x" id="paypal"></i></a>
             </div> 
         </div> 
     </div>
@@ -108,15 +110,37 @@
                     <img id="current-shoe"></img>
                     <button id="next-shoe">Next</button> 
                 </div>
-        </div> 
+     
          
         <!--- Insert a vertical carosuol here with a transparent
         background just steal images o shioes and have them converted to svg 
        ALL SHOES MUST BE SOLD OUT!!!!!!!!-->
        </div>
-   </section>
-
+    </section>
+   </div>
    
+   <section id="all-in-one">    
+    <div id="slider">
+       <button id="slide-left">left</button>
+        <img src="https://i.etsystatic.com/34279716/r/il/692668/3757516879/il_1588xN.3757516879_6zzf.jpg" id="slider-image-center"></img>
+        <button id="slide-right">right</button>
+    </div>
+    <div id="description">
+        <button id="decrease-cart">-</button>
+        <input/><button id="increase-cart">+</button>
+        <button id="sumbit-cart">Submit</button>
+        
+
+    </div>
+   <div id="button-group">
+    <button class="button-group">Socks</button>
+    <button class="button-group">Shoes</button>
+    <button class="button-group">Pants</button>
+    <button class="button-group">Hats</button>
+
+</div>
+</section>
+   <!--
    <section class="Hats">
         
 
@@ -135,8 +159,37 @@
                     </div>
             </div>
         </div>
+        
+    
+        <div class="card"> 
+            <img class="image-card" src="https://i.pinimg.com/736x/87/85/a6/8785a681c01c6c77981372a0396ea281.jpg">
+        <div class="card-details"> 
+             <span class="price"> $39.99 </span> 
+                <div class="detail-button-wrapper">
+                    <span class="button">Add To Cart</span>
+                    <div>
+                    <button id="card-input-minus"> - </button>
+                    <input id="card-input-CART" class="card-input-cart"></input>
+                     <button id="card-input-plus"> + </button>
+                    </div>
+                </div>
+        </div>
     </div>
 
+    <div class="card"> 
+        <img class="image-card" src="https://i.pinimg.com/736x/87/85/a6/8785a681c01c6c77981372a0396ea281.jpg">
+    <div class="card-details"> 
+         <span class="price"> $39.99 </span> 
+            <div class="detail-button-wrapper">
+                <span class="button">Add To Cart</span>
+                <div>
+                <button id="card-input-minus"> - </button>
+                <input id="card-input-CART" class="card-input-cart"></input>
+                 <button id="card-input-plus"> + </button>
+                </div>
+            </div>
+    </div>
+</div>
             
        
 </section> 
@@ -175,13 +228,104 @@
 
    <section id="pants">
     
+    <div class="card-container">
+        <div class="card"> 
+                <img class="image-card" src="https://i.pinimg.com/736x/87/85/a6/8785a681c01c6c77981372a0396ea281.jpg">
+            <div class="card-details"> 
+                 <span class="price"> $39.99 </span> 
+                    <div class="detail-button-wrapper">
+                        <span class="button">Add To Cart</span>
+                        <div>
+                        <button id="card-input-minus"> - </button>
+                        <input id="card-input-CART" class="card-input-cart"></input>
+                         <button id="card-input-plus"> + </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    
+    
+        <div class="card"> 
+            <img class="image-card" src="https://i.pinimg.com/736x/87/85/a6/8785a681c01c6c77981372a0396ea281.jpg">
+        <div class="card-details"> 
+             <span class="price"> $39.99 </span> 
+                <div class="detail-button-wrapper">
+                    <span class="button">Add To Cart</span>
+                    <div>
+                    <button id="card-input-minus"> - </button>
+                    <input id="card-input-CART" class="card-input-cart"></input>
+                     <button id="card-input-plus"> + </button>
+                    </div>
+                </div>
+        </div>
+    </div>
+ 
+    <div class="card"> 
+        <img class="image-card" src="https://i.pinimg.com/736x/87/85/a6/8785a681c01c6c77981372a0396ea281.jpg">
+    <div class="card-details"> 
+         <span class="price"> $39.99 </span> 
+            <div class="detail-button-wrapper">
+                <span class="button">Add To Cart</span>
+                <div>
+                <button id="card-input-minus"> - </button>
+                <input id="card-input-CART" class="card-input-cart"></input>
+                 <button id="card-input-plus"> + </button>
+                </div>
+            </div>
+    </div>
+</div>
    </section>
 
 
    <section id="hats">
 
-   </section>
+    <div class="card-container">
+        <div class="card"> 
+                <img class="image-card" src="https://i.pinimg.com/736x/87/85/a6/8785a681c01c6c77981372a0396ea281.jpg">
+            <div class="card-details"> 
+                 <span class="price"> $39.99 </span> 
+                    <div class="detail-button-wrapper">
+                        <span class="button">Add To Cart</span>
+                        <div>
+                        <button id="card-input-minus"> - </button>
+                        <input id="card-input-CART" class="card-input-cart"></input>
+                         <button id="card-input-plus"> + </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+   
+        <div class="card"> 
+            <img class="image-card" src="https://i.pinimg.com/736x/87/85/a6/8785a681c01c6c77981372a0396ea281.jpg">
+        <div class="card-details"> 
+             <span class="price"> $39.99 </span> 
+                <div class="detail-button-wrapper">
+                    <span class="button">Add To Cart</span>
+                    <div>
+                    <button id="card-input-minus"> - </button>
+                    <input id="card-input-CART" class="card-input-cart"></input>
+                     <button id="card-input-plus"> + </button>
+                    </div>
+                </div>
+        </div>
+    </div>
 
+    <div class="card"> 
+        <img class="image-card" src="https://i.pinimg.com/736x/87/85/a6/8785a681c01c6c77981372a0396ea281.jpg">
+    <div class="card-details"> 
+         <span class="price"> $39.99 </span> 
+            <div class="detail-button-wrapper">
+                <span class="button">Add To Cart</span>
+                <div>
+                <button id="card-input-minus"> - </button>
+                <input id="card-input-CART" class="card-input-cart"></input>
+                 <button id="card-input-plus"> + </button>
+                </div>
+            </div>
+    </div>
+</div>
+   </section>
+--> 
 
    
    <footer id="footer">
